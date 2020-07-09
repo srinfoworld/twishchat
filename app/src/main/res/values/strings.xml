@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Twish Chat</string>
+    <string name="sendPhoto">Photo Camera</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="select_picture_title">Get Photo From</string>
+    <string name="sendPhotoGallery">Photo Gallery</string>
+    <string name="api_key_google_places">AIzaSyBOjRLKZHhCGN6hDWvZZR0hZmuHEWncu-0</string>
+    <string name="sendLocation">Send Location</string>
+    <string name="locationTo">Localização Enviada</string>
+    <string name="create_group">Create Group</string>
+    <string name="delete">Delete</string>
+    <string name="block">Block</string>
+    <string name="unblock">Unblock</string>
+    <string name="video_call">Video Call</string>
+    <string name="voice_call">Voice Call</string>
+    <string name="search">Search</string>
+    <string name="clearChat">Clear Chat</string>
+    <string name="exitGroup">Exit Group</string>
+    <string name="auth_failed">Check your email and password or sign up</string>
+    <string name="confirm">Confirm</string>
+    <string name="profile">Profile</string>
+    <string name="add">Add Participants</string>
+    <string name="findfriends">Find Friends</string>
+    <string name="request">Request</string>
+    <string name="no_contacts">No Contacts\nStart exploring friends in Find Friends</string>
+    <string name="add_contacts">No contacts for create group</string>
+    <string name="start_message">To start messaging with your friends,\nTap Contact button in corner of bottom.</string>
+    <string name="no_friend_request">No Friend Request</string>
+    <string name="no_friends">No Friends</string>
+    <string name="online">Online</string>
+    <string name="server_key">AAAAzkC_Gko:APA91bG6f7Sgqsft3Dmula7go9ErswKxMNDLLPRNz3JtL9cxKpmkqZS48qxivgkoOR5pEnGfzhgPpE1ByuOajGOJvOPdUiCREYOEcgp-LjWxSnWVv4FmfyYcN-suYS6pN873o3iW96z8</string>
+    <string name="search_by_name">Search by name</string>
+
+    <string name="label_settings">Settings</string>
+
+    <string name="msg_welcome_message">Welcome to Open Video Call</string>
+
+    <string name="label_channel_name_hint">Channel name</string>
+
+    <string name="label_encryption_key_hint">Encryption key</string>
+
+    <string name="label_join">Join</string>
+
+    <string name="label_do_network_test">Test your network</string>
+
+    <string name="label_confirm">Confirm</string>
+
+    <string name="label_send">Send</string>
+
+    <string name="label_options">Options</string>
+    <string name="label_network_testing">Testing…</string>
+    <string name="label_network_testing_placeholder">-</string>
+    <string name="label_network_test_result">Test Result</string>
+
+    <string name="label_debug">Debug</string>
+    <string name="label_quality">Quality</string>
+    <string name="label_rtt">RTT</string>
+    <string name="label_uplink_packet_loss">Uplink Packet Loss</string>
+    <string name="label_downlink_packet_loss">Downlink Packet Loss</string>
+
+    <string name="msg_say_something">Say something…</string>
+
+    <string name="msg_connection_error">Connection error, please check the network settings or make sure channel name/access token are valid</string>
+
+    <string name="label_title_resolution">Resolution</string>
+    <string name="label_title_frame_rate">Frame Rate(fps)</string>
+
+    // DO NOT TRANSLATE
+    <string name="bit_rate_value_with_unit">%d kbps</string>
+    <string name="frame_rate_value_with_unit">%d fps</string>
+    <string name="calling">Calling</string>
+    <string name="hold">Call on Hold</string>
+</resources>

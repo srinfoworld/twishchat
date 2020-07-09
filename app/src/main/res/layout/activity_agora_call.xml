@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context=".agvideocall.ui.CallActivity">
+
+    <com.app.twishchat.agvideocall.ui.layout.GridVideoViewContainer
+        android:id="@+id/grid_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@id/small_video_view_dock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:inflatedId="@id/small_video_view_dock"
+            android:layout="@layout/small_video_view_dock" />
+
+        <com.app.twishchat.propeller.ui.AGLinearLayout
+            android:id="@+id/extra_ops_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onSwitchCameraClicked"
+                android:scaleType="center"
+                android:background="@drawable/btn_switch_camera_white" />
+
+
+        </com.app.twishchat.propeller.ui.AGLinearLayout>
+
+        <ImageView
+            android:id="@+id/hangupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onHangupClicked"
+            android:layout_above="@+id/bottom_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_red_hangup"
+            android:padding="16dp"
+            android:src="@drawable/ic_call_end_black_24dp" />
+
+
+        <com.app.twishchat.propeller.ui.AGLinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bottom_action_container"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:id="@id/switch_speaker_id"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onSwitchSpeakerClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_outline_volume_up_24" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onFilterClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_filter" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onAddClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_action_user_black" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onVideoMuteClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_outline_videocam_24" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onVoiceMuteClicked"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_outline_mic_none_24" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/msg_input_container"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/dark_black"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onClickHideIME"
+                    android:scaleType="center"
+                    android:src="@drawable/btn_keyboard_hide" />
+
+                <EditText
+                    android:id="@+id/msg_content"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="20"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/msg_say_something"
+                    android:imeActionLabel="@string/label_send"
+                    android:imeOptions="actionSend"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="@android:color/white" />
+
+            </LinearLayout>
+
+        </com.app.twishchat.propeller.ui.AGLinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/contacts_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            android:layout_above="@+id/bottom_container"
+            android:background="@drawable/top_radius_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_baseline_more_horiz_24"/>
+
+            <TextView
+                android:id="@+id/txt_ongoing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ongoing"
+                android:visibility="gone"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/CallRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Contacts"
+                android:layout_margin="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msg_list"
+            android:layout_width="272dp"
+            android:layout_height="144dp"
+            android:layout_above="@id/bottom_container"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</FrameLayout>

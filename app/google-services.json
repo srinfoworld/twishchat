@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "885849528906",
+    "firebase_url": "https://twish-chat.firebaseio.com",
+    "project_id": "twish-chat",
+    "storage_bucket": "twish-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885849528906:android:951748d85fa4efab0964b3",
+        "android_client_info": {
+          "package_name": "com.app.twishchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885849528906-93faf9gep9gno7l146hgsl0gir1a0hin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.twishchat",
+            "certificate_hash": "d60bb5d2c9e058a29e6efe11e3531e4300640d18"
+          }
+        },
+        {
+          "client_id": "885849528906-j554kpartac7j26lodftvf025nqn7i4j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.twishchat",
+            "certificate_hash": "d2b6c0259f319859739b629063853c5fd7909775"
+          }
+        },
+        {
+          "client_id": "885849528906-j68ue76odj5jsd2k78sqpte05u85g4mu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0VJiO6ou6bFa-390qAV-VLOkkyP2nxuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885849528906-j68ue76odj5jsd2k78sqpte05u85g4mu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

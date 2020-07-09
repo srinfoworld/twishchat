@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_alignBottom="@+id/contentMessageChat"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/ivUserChat"
+        android:src="@drawable/person"/>
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        app:cmv_backgroundColor="#fff"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_arrowGravity="end"
+        app:cmv_arrowPosition="left"
+        app:cmv_cornerRadius="3dp"
+        app:cmv_contentPadding="3dp"
+        app:cmv_showArrow="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUserChat">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/call2"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/img"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvContactName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hardik Gosai"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvContactNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+919913464305"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+    <TextView
+        android:text="22/06/2016"
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:paddingTop="5dp"
+        android:textSize="10sp"
+        android:layout_below="@+id/contentMessageChat"
+        android:layout_toEndOf="@+id/ivUserChat" />
+
+</RelativeLayout>

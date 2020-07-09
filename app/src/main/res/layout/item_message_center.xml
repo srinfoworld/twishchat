@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/contentMessageChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="3dp"
+        emojicon:cmv_backgroundColor="@color/notification"
+        emojicon:cmv_backgroundColorPressed="#FFBABABA"
+        emojicon:cmv_cornerRadius="3dp"
+        emojicon:cmv_contentPadding="5dp"
+        emojicon:cmv_showArrow="false"
+        android:layout_alignParentTop="true">
+
+        <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textIsSelectable="true"
+            emojicon:emojiconSize="28sp"
+            android:textSize="12sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_badge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="TODO" />
+
+
+        <FrameLayout
+            android:id="@+id/counterValuePanel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_gravity="end|top">
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
